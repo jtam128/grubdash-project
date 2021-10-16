@@ -111,8 +111,8 @@ function idAndStatusIsValid(req, res, next) {
 };
 
 function destroy(req, res) {
-  const index = orders.indexOf(res.locals.order); //??? .indexOf()
-  orders.splice(index, 1); //???what does .splice() do
+  const index = orders.indexOf(res.locals.order);
+  orders.splice(index, 1);
   res.sendStatus(204);
 }
 
